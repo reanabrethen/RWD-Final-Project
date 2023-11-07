@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Alice", serif ;
     font-family: "Rubik", sans-serif ;
-    src: url(https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital,wght@0,300;1,300&display=swap);
+    src: url(https://fonts.googleapis.com/css2?family=Alice&family=Rubik&display=swap);
 }
 
 body{
@@ -23,7 +23,7 @@ body{
    justify-content: center;
    align-items: center;
    background-color:rgba(245, 245, 245, 50%);
-   font-family: "Merriweather", sans-serif;
+   font-family: "Rubik", sans-serif;
 }
 
 h1{
@@ -32,11 +32,13 @@ h1{
 .heading{
     text-align: center;
     font-size: 1rem;
-    font-family: "Merriweather", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 .content {
     font-family: "Alice", serif;
+    font-size: .8rem;
+    padding-left: 20px;
 }
 
 #main-title {
@@ -46,14 +48,16 @@ h1{
 main{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    height:500px;
-    background-color: rgba(245, 245, 245, 75%);
+    height: 500px;;
+
+    background-color: rgba(245, 245, 245, 75%); 
+    
 }
 
 .ul-list {
     text-align: center;
     position: fixed;
-    
+    font-family: "Alice", serif;
 }
 
 .nav {
@@ -67,20 +71,25 @@ main{
     flex-direction: column;
     gap: 5px;
     margin: .5rem;
-    
+    flex-wrap: wrap;
+     justify-self: center;
+    align-self: center;
   }
   .nav-list {
     display: flex;
     margin-right: 2rem;
+    
   }
 
 nav li:hover{
     background-color: rgb(51, 132, 207);
     color: whitesmoke;
+    display: flex;
+   
 }
 
   nav li {
-    height:30px;
+    height:60px;
     width: 200px;
     background-color: whitesmoke;
     border: 2px solid rgb(51, 132, 207);
@@ -89,6 +98,7 @@ nav li:hover{
     text-align: center;
     margin: 0;
     list-style-type: none;
+    font-size: 1rem;
 }
 a {
     text-decoration: underline;
@@ -102,16 +112,19 @@ a:hover {
 
 p, li{
     font-family: "Alice", serif;
+    
 }
 
 li{
     list-style-type:square;
+    
 }
 
 footer {
     text-align: center;
     background-color: rgba(245, 245, 245, 50%);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: "Alice", serif;
     
 }
 
@@ -123,7 +136,7 @@ footer {
     content: ' "'
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 780px) {
 
     body {
         background-repeat: no-repeat;
@@ -131,7 +144,7 @@ footer {
     }
     
 }
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
 
     body {
         background-repeat: no-repeat;
