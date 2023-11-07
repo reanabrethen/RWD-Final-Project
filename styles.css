@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Alice", serif ;
+    font-family: "Rubik", sans-serif ;
+    src: url(https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital,wght@0,300;1,300&display=swap);
+}
+
 body{
     margin: 0;
     font-size: 10px;
@@ -12,23 +18,27 @@ body{
    border-bottom: 3px solid rgb(51, 132, 207);
    height: 15vh;
    width:100%;
-   font-size: 4em;
+   font-size: 2rem;
    display: flex;
    justify-content: center;
    align-items: center;
    background-color:rgba(245, 245, 245, 50%);
-
-
+   font-family: "Merriweather", sans-serif;
 }
 
 h1{
     text-align: center;
 }
 .heading{
-    font-family: "Joan", sans-serif;
     text-align: center;
     font-size: 1rem;
+    font-family: "Merriweather", sans-serif;
 }
+
+.content {
+    font-family: "Alice", serif;
+}
+
 #main-title {
     font-size: 1em;
 }
@@ -43,6 +53,7 @@ main{
 .ul-list {
     text-align: center;
     position: fixed;
+    
 }
 
 .nav {
@@ -62,7 +73,13 @@ main{
     display: flex;
     margin-right: 2rem;
   }
-  nav p {
+
+nav li:hover{
+    background-color: rgb(51, 132, 207);
+    color: whitesmoke;
+}
+
+  nav li {
     height:30px;
     width: 200px;
     background-color: whitesmoke;
@@ -71,19 +88,20 @@ main{
     padding-top: 10px;
     text-align: center;
     margin: 0;
+    list-style-type: none;
 }
 a {
     text-decoration: underline;
     color: rgb(51, 132, 207);
-    
 }
 
 a:hover {
     text-decoration: none;
+    color: whitesmoke;
 }
 
 p, li{
-    font-family: serif
+    font-family: "Alice", serif;
 }
 
 li{
