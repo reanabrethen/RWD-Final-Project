@@ -10,6 +10,7 @@ body{
     background-image: url(images/cityscape-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -56,7 +57,7 @@ main{
 
 .ul-list {
     text-align: center;
-    position: fixed;
+    position: relative;
     font-family: "Alice", serif;
 }
 
@@ -75,6 +76,7 @@ main{
      justify-self: center;
     align-self: center;
   }
+
   .nav-list {
     display: flex;
     margin-right: 2rem;
@@ -84,7 +86,7 @@ main{
 nav li:hover{
     background-color: rgb(51, 132, 207);
     color: whitesmoke;
-    display: flex;
+   
    
 }
 
@@ -103,11 +105,13 @@ nav li:hover{
 a {
     text-decoration: underline;
     color: rgb(51, 132, 207);
+    font-size: .8rem;
 }
 
 a:hover {
     text-decoration: none;
     color: whitesmoke;
+    background-color: rgb(51, 132, 207);
 }
 
 p, li{
@@ -136,22 +140,36 @@ footer {
     content: ' "'
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
 
     body {
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
+    }
+
+    main {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    footer {
+        display: grid;
     }
     
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 424px) {
 
     body {
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
     main {
-        position: static;
+        grid-template-columns: minmax(0, 1fr);
+       
+    }
+    footer {
+        display: grid;
+        
     }
   
 }
