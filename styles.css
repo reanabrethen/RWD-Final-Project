@@ -11,6 +11,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: "Alice", serif;
 
 }
 
@@ -27,9 +28,6 @@ body{
    font-family: "Rubik", sans-serif;
 }
 
-h1{
-    text-align: center;
-}
 .heading{
     text-align: center;
     font-size: 1rem;
@@ -44,6 +42,7 @@ h1{
 
 #main-title {
     font-size: 1em;
+    text-align: center;
 }
 
 main{
@@ -150,11 +149,15 @@ footer {
 
     main {
         grid-template-columns: minmax(0, 1fr);
+        font-family: "Alice", serif;
     }
     footer {
         display: grid;
+
     }
-    
+    p, li {
+        font-family: "Alice", serif;
+    }
 }
 @media screen and (max-width: 424px) {
 
@@ -165,11 +168,14 @@ footer {
     }
     main {
         grid-template-columns: minmax(0, 1fr);
-       
+        font-family: "Alice", serif;
     }
+        p, li {
+            font-family: "Alice", serif;
+        }
+
+    
     footer {
-        display: grid;
-        
+        display: grid; 
     }
-  
 }
